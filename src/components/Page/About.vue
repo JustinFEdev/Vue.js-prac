@@ -5,6 +5,7 @@
     <h1>{{ title }}</h1>
     <p>{{ count }}</p>
     <button @click="count++">추가</button>
+    <h2>commit</h2>
   </div>
 </template>
 <script>
