@@ -1,7 +1,6 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
-    <Demopage />
     <h1>{{ title }}</h1>
     <p>{{ count }}</p>
     <button @click="count++">추가</button>
@@ -26,7 +25,6 @@
 </template>
 <script>
 import VueSlickCarousel from "vue-slick-carousel";
-import Demopage from "./Demopage.vue";
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 // optional style for arrows & dots
@@ -62,7 +60,7 @@ export default {
       visibleSlide: 0,
     };
   },
-  components: { Demopage, VueSlickCarousel },
+  components: { VueSlickCarousel },
 };
 </script>
 <style>

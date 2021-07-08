@@ -1,73 +1,74 @@
 {
-  "name": "my-project",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "axios": "^0.21.1",
-    "core-js": "^3.15.2",
-    "vue": "^2.6.14",
-    "vue-axios": "^3.2.4",
-    "vue-router": "^3.5.2",
-    "vue-slick-carousel": "^1.0.6",
-    "vuex": "^3.6.2"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.5.13",
-    "@vue/cli-plugin-eslint": "^4.5.13",
-    "@vue/cli-plugin-router": "^4.5.13",
-    "@vue/cli-plugin-vuex": "^4.5.13",
-    "@vue/cli-service": "^4.5.13",
-    "@vue/eslint-config-airbnb": "^5.3.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-vue": "^6.2.2",
-    "prettier": "^2.3.2",
-    "vue-template-compiler": "^2.6.14"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
+    "name": "my-project",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint"
     },
-    "extends": [
-      "plugin:vue/essential",
-      "@vue/airbnb",
-      "plugin:prettier/recommended",
-      "prettier"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
+    "dependencies": {
+        "axios": "^0.21.1",
+        "core-js": "^3.15.2",
+        "vue": "^2.6.14",
+        "vue-axios": "^3.2.4",
+        "vue-router": "^3.5.2",
+        "vue-slick-carousel": "^1.0.6",
+        "vuetify": "^2.5.6",
+        "vuex": "^3.6.2"
     },
-    "rules": {
-      "react/react-in-jsx-scope": "off",
-      "prettier/prettier": [
-        0,
-        {
-          "singleQuote": true,
-          "semi": false,
-          "useTabs": true,
-          "tabWidth": 2,
-          "trailingComma": "none",
-          "printWidth": 140,
-          "bracketSpacing": true,
-          "arrowParens": "avoid",
-          "arrow-body-style": "off",
-          "prefer-arrow-callback": "off"
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^4.5.13",
+        "@vue/cli-plugin-eslint": "^4.5.13",
+        "@vue/cli-plugin-router": "^4.5.13",
+        "@vue/cli-plugin-vuex": "^4.5.13",
+        "@vue/cli-service": "^4.5.13",
+        "@vue/eslint-config-airbnb": "^5.3.0",
+        "babel-eslint": "^10.1.0",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.23.4",
+        "eslint-plugin-prettier": "^3.4.0",
+        "eslint-plugin-vue": "^6.2.2",
+        "prettier": "^2.3.2",
+        "vue-template-compiler": "^2.6.14"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "@vue/airbnb",
+            "plugin:prettier/recommended",
+            "prettier"
+        ],
+        "parserOptions": {
+            "parser": "babel-eslint"
+        },
+        "rules": {
+            "import/prefer-default-export": "off",
+            "prettier/prettier": [
+                0,
+                {
+                    "singleQuote": true,
+                    "semi": false,
+                    "useTabs": true,
+                    "tabWidth": 2,
+                    "trailingComma": "none",
+                    "printWidth": 140,
+                    "bracketSpacing": true,
+                    "arrowParens": "avoid",
+                    "arrow-body-style": "off",
+                    "prefer-arrow-callback": "off"
+                }
+            ]
         }
-      ]
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead"
+    ]
 }
