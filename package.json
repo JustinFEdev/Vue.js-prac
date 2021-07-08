@@ -13,6 +13,8 @@
         "vue": "^2.6.14",
         "vue-axios": "^3.2.4",
         "vue-router": "^3.5.2",
+        "vue-sidebar-menu": "^4.8.1",
+        "vue-simple-drawer": "^1.0.6",
         "vue-slick-carousel": "^1.0.6",
         "vuetify": "^2.5.6",
         "vuex": "^3.6.2"
@@ -49,6 +51,14 @@
         },
         "rules": {
             "import/prefer-default-export": "off",
+            "no-plusplus": 0,
+            "allowForLoopAfterthoughts": true,
+            "vue/return-in-computed-property": [
+                "error",
+                {
+                    "treatUndefinedAsUnspecified": false
+                }
+            ],
             "prettier/prettier": [
                 0,
                 {

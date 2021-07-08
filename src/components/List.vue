@@ -1,5 +1,6 @@
 <template>
   <div class="listlayout">
+    <!-- 추가 항목(반복문) -->
     <v-card
       :class="{ done: list.status === 'done' }"
       pa-3

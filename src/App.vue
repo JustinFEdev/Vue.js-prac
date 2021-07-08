@@ -1,15 +1,37 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> | <router-link to="/about">About</router-link> |
-      <router-link to="/demopage">DemoPage</router-link>
+      <div>
+        <button @click="toggle">사이드 메뉴</button>
+        <Drawer @close="toggle" align="left" :closeable="true">
+          <div v-if="open">
+            <router-link to="/">Home</router-link> | <router-link to="/about">About</router-link> |
+            <router-link to="/demopage">DemoPage</router-link>
+          </div>
+        </Drawer>
+      </div>
     </div>
     <router-view />
   </div>
 </template>
 <script>
+import Drawer from "vue-simple-drawer";
+
 export default {
   name: "App",
+  data() {
+    return {
+      open: false,
+    };
+  },
+  components: {
+    Drawer,
+  },
+  methods: {
+    toggle() {
+      this.open = !this.open;
+    },
+  },
 };
 </script>
 
@@ -24,6 +46,8 @@ export default {
 
 #nav {
   padding: 30px;
+  background-color: cadetblue;
+  text-align: left;
 }
 
 #nav a {

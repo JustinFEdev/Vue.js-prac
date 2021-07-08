@@ -2,8 +2,13 @@
   <div class="about">
     <h1>This is an about page</h1>
     <h1>{{ title }}</h1>
-    <p>{{ count }}</p>
-    <button @click="count++">추가</button>
+    <div>
+      <h3>카운팅 (vuex활용)</h3>
+      <p>{{ $store.state.counter }}</p>
+      <v-btn @click="$store.commit('decrease')">제거</v-btn>
+      <v-btn @click="$store.commit('increase')">추가</v-btn>
+    </div>
+
     <h2>commit</h2>
     <VueSlickCarousel v-bind="spins">
       <div v-for="(slide, index) in slides" :key="slide" :index="index" class="carousel">

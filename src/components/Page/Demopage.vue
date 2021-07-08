@@ -1,6 +1,10 @@
 <template>
   <v-container>
     <v-layout row wrap class="layout">
+      <v-flex xs12 text-xs-center>
+        <h1>투두 리스트</h1>
+        <p>전체 할일 : {{ todoList.length }}/ 완료된일 : / 남은 일 :</p>
+      </v-flex>
       <v-flex xs6 pa-2 class="bigarea">
         <List :todoList="todoList" @listDelete="listDelete" @statusControl="statusControl" />
       </v-flex>

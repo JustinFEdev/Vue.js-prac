@@ -3,6 +3,7 @@ import Vuetify from "vuetify";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
+
 import "vuetify/dist/vuetify.min.css";
 
 export const eventBus = new Vue({
