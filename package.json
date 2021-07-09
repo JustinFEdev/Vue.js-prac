@@ -52,7 +52,6 @@
         "rules": {
             "import/prefer-default-export": "off",
             "no-plusplus": 0,
-            "allowForLoopAfterthoughts": true,
             "vue/return-in-computed-property": [
                 "error",
                 {
@@ -71,7 +70,8 @@
                     "bracketSpacing": true,
                     "arrowParens": "avoid",
                     "arrow-body-style": "off",
-                    "prefer-arrow-callback": "off"
+                    "prefer-arrow-callback": "off",
+                    "allowForLoopAfterthoughts": true
                 }
             ]
         }
