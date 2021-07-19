@@ -15,8 +15,8 @@
   </v-container>
 </template>
 <script>
-import List from "../List.vue";
-import ListAdd from "../ListAdd.vue";
+import List from "../todos/List.vue";
+import ListAdd from "../todos/ListAdd.vue";
 
 export default {
   components: {
